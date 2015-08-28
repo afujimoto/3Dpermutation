@@ -36,7 +36,7 @@ Please download protein structure file from "http://www.rcsb.org/pdb/home/home.d
 
 *Usage
 
-perl 3Dpermutation.pl -N ¥<Minimum number of mutations in the 3D structure¥> -G \<Transcript ID\> -I \<PDB file\>  -M ¥<Mutation position on the transcript (Amino Acid position)¥> -C ¥<Chain of PDB¥> -P ¥<Number of permutations¥> -R ¥<Reference genome sequence file¥> -A ¥<Gene annotaiton file¥>
+perl 3Dpermutation.pl -N \<Minimum number of mutations in the 3D structure\> -G \<Transcript ID\> -I \<PDB file\>  -M \<Mutation position on the transcript (Amino Acid position)\> -C \<Chain of PDB\> -P \<Number of permutations\> -R \<Reference genome sequence file\> -A \<Gene annotaiton file\>
 
 example
 
