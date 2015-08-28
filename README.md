@@ -1,5 +1,5 @@
-# 3Dpermute
-This is a program to test distances between somatic mtautions in 3D protein structure.
+# 3Dpermutation
+This is a program to test distribution of somatic mutations in 3D protein structure.
 
 Please reference our manuscripts whenever you utilize this package in your analysis.
 
@@ -19,24 +19,24 @@ samtools; http://samtools.sourceforge.net
 MAFFT; http://mafft.cbrc.jp/alignment/software/
 
 
-(3) Gene annotaiton file
+(3) Gene annotation file
 
 Downloadable from the same repository (Annotation.gencode.v19.txt)
 
-If youe want to use a different annotation information, please make gene annotation file by yourself.
+If you want to use a different annotation information, please make gene annotation file by yourself.
 
 (4) Indexed reference genome sequence file
 
 Please download reference genome sequence file and create index file by "samtools index <reference genome sequence file>".
 
-(5) Protein strucuture file (PDB format)
+(5) Protein structure file (PDB format)
 
 Please download protein structure file from "http://www.rcsb.org/pdb/home/home.do".
 
 
 *Usage
 
-perl 3Dpermutation.pl -N \<Minimum number of mutations in the 3D structure\> -G \<Transcript ID\> -I \<PDB file\>  -M \<Mutation position on the transcript (Amino Acid position)\> -C \<Chain of PDB\> -P \<Number of permutations\> -R \<Reference genome sequence file\> -A \<Gene annotaiton file\>
+perl 3Dpermutation.pl -N \<Minimum number of mutations in the 3D structure\> -G \<Transcript ID\> -I \<PDB file\>  -M \<Mutation position on the transcript (Amino Acid position)\> -C \<Chain of the protein in the PDB file\> -P \<Number of permutations\> -R \<Reference genome sequence file\> -A \<Gene annotation file\>
 
 example
 
