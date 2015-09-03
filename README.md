@@ -39,6 +39,7 @@ Please download protein structure file from "http://www.rcsb.org/pdb/home/home.d
 perl 3Dpermutation.pl -N \<Minimum number of mutations in the 3D structure\> -G \<Transcript ID\> -I \<PDB file\>  -M \<Mutation position on the transcript (Amino Acid position)\> -C \<Chain of the protein in the PDB file\> -P \<Number of permutations\> -R \<Reference genome sequence file\> -A \<Gene annotation file\>
 
 *Output
+
 gene_symbol; Gene symbol of the transcript ID
 
 
@@ -57,7 +58,7 @@ Length_ratio; Ratio of aligned sequence length to total sequence length
 Gap_ratio; Ratio of gaps to length of the alignment 
 
 
-Number_of_mapped_mutation; Number of mapped mutation on the amino acid sequence in the 3D structure
+Number_of_mapped_mutation; Number of mapped mutations on the amino acid sequence in the 3D structure
 
 
 Mutation_position; Position of mutations
