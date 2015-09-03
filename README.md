@@ -40,7 +40,7 @@ perl 3Dpermutation.pl -N \<Minimum number of mutations in the 3D structure\> -G 
 
 example
 
-The following command is 3D permutation analysis for five mutations (11, 24, 27, 138 and 142 in amino acid position) of PTEN gene (transcript id ENST00000371953.3) for 3D structure in "pdb1d5r.ent" file.
+The following command perform 3D permutation analysis for five mutations (11, 24, 27, 138 and 142 in amino acid position) of PTEN gene (transcript id ENST00000371953.3) for 3D structure in "pdb1d5r.ent" file. Permutation repeat 1000 times.
 
 perl 3Dpermutation.pl -G ENST00000371953.3 -I pdb1d5r.ent  -M 11:24:27:138:142 -C A -N 3 -P 10000 -R All.fa -A Annotation.gencode.v19.txt > result.txt
 

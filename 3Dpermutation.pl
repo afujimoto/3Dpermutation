@@ -117,7 +117,7 @@ if($num_converted_mutation < $num_mut_cutoff){
 }
 
 my ($mutation_num, $ave_mutation_dis, $median_mutation_dis, $sd_mutation_dis, $permutaiton_P_value_ave, $permutaiton_P_value_median, $permutaiton_P_value_sd) = permutation_3D_pos(\%moelcule_ave_pos, $mutation_pos_on_PDB_for_permutation, $num_permutation);
-my @out_row_name = ("gene_symbol", "chan", "mRNA_id", "PDB_file", "Length_ratio", "Gap_ratio", "Number_of_converted_mutation", "Mutation_pos", "Mutation_pos_on_PDB", "Average_mutation_distance", "Permutaiton_P_value"),"\n";
+my @out_row_name = ("gene_symbol", "chain", "mRNA_id", "PDB_file", "Length_ratio", "Gap_ratio", "Number_of_mapped_mutation", "Mutation_position", "Mutation_position_on_protein", "Average_distance_between_mutations", "Permutaiton_P_value"),"\n";
 my @out_row = ($gene_symbol, $chan, $mRNA_id, $PDB_file, $length_ratio, $gap_ratio, $num_converted_mutation, join(",", @mutation_pos2), $mutation_pos_on_PDB, $ave_mutation_dis, $permutaiton_P_value_ave);
 
 print join("\t", @out_row_name), "\n";
